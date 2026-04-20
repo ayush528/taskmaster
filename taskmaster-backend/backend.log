@@ -1,0 +1,658 @@
+INFO:     Will watch for changes in these directories: ['/home/ayush/Desktop/project/sepm/stitch_login_page/taskmaster-backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [110970] using WatchFiles
+INFO:     Started server process [110972]
+INFO:     Waiting for application startup.
+2026-04-08 11:42:05 | INFO     | taskmaster | Starting TaskMaster API (env=development)
+2026-04-08 11:42:05,814 INFO sqlalchemy.engine.Engine select pg_catalog.version()
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | select pg_catalog.version()
+2026-04-08 11:42:05,814 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [raw sql] {}
+2026-04-08 11:42:05,817 INFO sqlalchemy.engine.Engine select current_schema()
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | select current_schema()
+2026-04-08 11:42:05,818 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [raw sql] {}
+2026-04-08 11:42:05,821 INFO sqlalchemy.engine.Engine show standard_conforming_strings
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | show standard_conforming_strings
+2026-04-08 11:42:05,822 INFO sqlalchemy.engine.Engine [raw sql] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [raw sql] {}
+2026-04-08 11:42:05,824 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-04-08 11:42:05,840 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,840 INFO sqlalchemy.engine.Engine [generated in 0.00073s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00073s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,852 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,852 INFO sqlalchemy.engine.Engine [cached since 0.01289s ago] {'table_name': 'tasks', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.01289s ago] {'table_name': 'tasks', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,855 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,855 INFO sqlalchemy.engine.Engine [cached since 0.01543s ago] {'table_name': 'projects', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.01543s ago] {'table_name': 'projects', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,857 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,858 INFO sqlalchemy.engine.Engine [cached since 0.01805s ago] {'table_name': 'reminders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.01805s ago] {'table_name': 'reminders', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,860 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,860 INFO sqlalchemy.engine.Engine [cached since 0.02045s ago] {'table_name': 'recurring_rules', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02045s ago] {'table_name': 'recurring_rules', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,862 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,862 INFO sqlalchemy.engine.Engine [cached since 0.02274s ago] {'table_name': 'team_members', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02274s ago] {'table_name': 'team_members', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,864 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,864 INFO sqlalchemy.engine.Engine [cached since 0.02485s ago] {'table_name': 'ai_requests_log', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02485s ago] {'table_name': 'ai_requests_log', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,866 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,867 INFO sqlalchemy.engine.Engine [cached since 0.02736s ago] {'table_name': 'task_history', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02736s ago] {'table_name': 'task_history', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,869 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,869 INFO sqlalchemy.engine.Engine [cached since 0.02985s ago] {'table_name': 'user_preferences', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02985s ago] {'table_name': 'user_preferences', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,875 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,875 INFO sqlalchemy.engine.Engine [generated in 0.00050s] {'typname_1': 'priority_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00050s] {'typname_1': 'priority_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,878 INFO sqlalchemy.engine.Engine CREATE TYPE priority_enum AS ENUM ('URGENT', 'HIGH', 'NORMAL', 'LOW')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE priority_enum AS ENUM ('URGENT', 'HIGH', 'NORMAL', 'LOW')
+2026-04-08 11:42:05,878 INFO sqlalchemy.engine.Engine [no key 0.00042s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00042s] {}
+2026-04-08 11:42:05,885 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,885 INFO sqlalchemy.engine.Engine [cached since 0.01009s ago] {'typname_1': 'status_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.01009s ago] {'typname_1': 'status_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,887 INFO sqlalchemy.engine.Engine CREATE TYPE status_enum AS ENUM ('not_started', 'in_progress', 'completed', 'blocked')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE status_enum AS ENUM ('not_started', 'in_progress', 'completed', 'blocked')
+2026-04-08 11:42:05,887 INFO sqlalchemy.engine.Engine [no key 0.00034s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00034s] {}
+2026-04-08 11:42:05,890 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,890 INFO sqlalchemy.engine.Engine [cached since 0.01559s ago] {'typname_1': 'reminder_type_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.01559s ago] {'typname_1': 'reminder_type_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,892 INFO sqlalchemy.engine.Engine CREATE TYPE reminder_type_enum AS ENUM ('in_app', 'email', 'sms')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE reminder_type_enum AS ENUM ('in_app', 'email', 'sms')
+2026-04-08 11:42:05,893 INFO sqlalchemy.engine.Engine [no key 0.00031s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00031s] {}
+2026-04-08 11:42:05,896 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,896 INFO sqlalchemy.engine.Engine [cached since 0.02127s ago] {'typname_1': 'reminder_freq_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02127s ago] {'typname_1': 'reminder_freq_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,898 INFO sqlalchemy.engine.Engine CREATE TYPE reminder_freq_enum AS ENUM ('once', 'daily', 'weekly')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE reminder_freq_enum AS ENUM ('once', 'daily', 'weekly')
+2026-04-08 11:42:05,899 INFO sqlalchemy.engine.Engine [no key 0.00038s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00038s] {}
+2026-04-08 11:42:05,902 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,902 INFO sqlalchemy.engine.Engine [cached since 0.02715s ago] {'typname_1': 'recurring_freq_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.02715s ago] {'typname_1': 'recurring_freq_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,904 INFO sqlalchemy.engine.Engine CREATE TYPE recurring_freq_enum AS ENUM ('daily', 'weekly', 'biweekly', 'monthly')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE recurring_freq_enum AS ENUM ('daily', 'weekly', 'biweekly', 'monthly')
+2026-04-08 11:42:05,904 INFO sqlalchemy.engine.Engine [no key 0.00034s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00034s] {}
+2026-04-08 11:42:05,907 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,907 INFO sqlalchemy.engine.Engine [cached since 0.03243s ago] {'typname_1': 'team_role_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.03243s ago] {'typname_1': 'team_role_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,909 INFO sqlalchemy.engine.Engine CREATE TYPE team_role_enum AS ENUM ('admin', 'member')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE team_role_enum AS ENUM ('admin', 'member')
+2026-04-08 11:42:05,909 INFO sqlalchemy.engine.Engine [no key 0.00030s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00030s] {}
+2026-04-08 11:42:05,912 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,913 INFO sqlalchemy.engine.Engine [cached since 0.03773s ago] {'typname_1': 'ai_request_type_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.03773s ago] {'typname_1': 'ai_request_type_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,916 INFO sqlalchemy.engine.Engine CREATE TYPE ai_request_type_enum AS ENUM ('breakdown', 'summarize', 'prioritize', 'schedule', 'suggest')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE ai_request_type_enum AS ENUM ('breakdown', 'summarize', 'prioritize', 'schedule', 'suggest')
+2026-04-08 11:42:05,916 INFO sqlalchemy.engine.Engine [no key 0.00037s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00037s] {}
+2026-04-08 11:42:05,919 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,919 INFO sqlalchemy.engine.Engine [cached since 0.04458s ago] {'typname_1': 'theme_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.04458s ago] {'typname_1': 'theme_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,921 INFO sqlalchemy.engine.Engine CREATE TYPE theme_enum AS ENUM ('dark', 'light')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE theme_enum AS ENUM ('dark', 'light')
+2026-04-08 11:42:05,922 INFO sqlalchemy.engine.Engine [no key 0.00038s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00038s] {}
+2026-04-08 11:42:05,924 INFO sqlalchemy.engine.Engine SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | SELECT pg_catalog.pg_type.typname 
+FROM pg_catalog.pg_type JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_type.typnamespace 
+WHERE pg_catalog.pg_type.typname = %(typname_1)s AND pg_catalog.pg_type_is_visible(pg_catalog.pg_type.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2026-04-08 11:42:05,925 INFO sqlalchemy.engine.Engine [cached since 0.05001s ago] {'typname_1': 'default_priority_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [cached since 0.05001s ago] {'typname_1': 'default_priority_enum', 'nspname_1': 'pg_catalog'}
+2026-04-08 11:42:05,927 INFO sqlalchemy.engine.Engine CREATE TYPE default_priority_enum AS ENUM ('URGENT', 'HIGH', 'NORMAL', 'LOW')
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | CREATE TYPE default_priority_enum AS ENUM ('URGENT', 'HIGH', 'NORMAL', 'LOW')
+2026-04-08 11:42:05,927 INFO sqlalchemy.engine.Engine [no key 0.00033s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00033s] {}
+2026-04-08 11:42:05,931 INFO sqlalchemy.engine.Engine 
+CREATE TABLE users (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	email VARCHAR(255) NOT NULL, 
+	password_hash VARCHAR(255) NOT NULL, 
+	full_name VARCHAR(255), 
+	timezone VARCHAR(64), 
+	preferences JSONB, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE users (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	email VARCHAR(255) NOT NULL, 
+	password_hash VARCHAR(255) NOT NULL, 
+	full_name VARCHAR(255), 
+	timezone VARCHAR(64), 
+	preferences JSONB, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id)
+)
+
+
+2026-04-08 11:42:05,932 INFO sqlalchemy.engine.Engine [no key 0.00043s] {}
+2026-04-08 11:42:05 | INFO     | sqlalchemy.engine.Engine | [no key 0.00043s] {}
+2026-04-08 11:42:06,058 INFO sqlalchemy.engine.Engine CREATE UNIQUE INDEX ix_users_email ON users (email)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE UNIQUE INDEX ix_users_email ON users (email)
+2026-04-08 11:42:06,058 INFO sqlalchemy.engine.Engine [no key 0.00047s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00047s] {}
+2026-04-08 11:42:06,103 INFO sqlalchemy.engine.Engine COMMENT ON TABLE users IS 'Core user accounts'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE users IS 'Core user accounts'
+2026-04-08 11:42:06,103 INFO sqlalchemy.engine.Engine [no key 0.00064s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00064s] {}
+2026-04-08 11:42:06,107 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN users.email IS 'Unique login email'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN users.email IS 'Unique login email'
+2026-04-08 11:42:06,107 INFO sqlalchemy.engine.Engine [no key 0.00065s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00065s] {}
+2026-04-08 11:42:06,109 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN users.password_hash IS 'Bcrypt hash'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN users.password_hash IS 'Bcrypt hash'
+2026-04-08 11:42:06,110 INFO sqlalchemy.engine.Engine [no key 0.00074s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00074s] {}
+2026-04-08 11:42:06,112 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN users.timezone IS 'IANA tz, e.g. Asia/Kolkata'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN users.timezone IS 'IANA tz, e.g. Asia/Kolkata'
+2026-04-08 11:42:06,113 INFO sqlalchemy.engine.Engine [no key 0.00063s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00063s] {}
+2026-04-08 11:42:06,117 INFO sqlalchemy.engine.Engine 
+CREATE TABLE projects (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	name VARCHAR(255) NOT NULL, 
+	description TEXT, 
+	color VARCHAR(7), 
+	is_team_project BOOLEAN DEFAULT false NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE projects (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	name VARCHAR(255) NOT NULL, 
+	description TEXT, 
+	color VARCHAR(7), 
+	is_team_project BOOLEAN DEFAULT false NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06,117 INFO sqlalchemy.engine.Engine [no key 0.00062s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00062s] {}
+2026-04-08 11:42:06,251 INFO sqlalchemy.engine.Engine CREATE INDEX ix_projects_user_id ON projects (user_id)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_projects_user_id ON projects (user_id)
+2026-04-08 11:42:06,251 INFO sqlalchemy.engine.Engine [no key 0.00037s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00037s] {}
+2026-04-08 11:42:06,292 INFO sqlalchemy.engine.Engine COMMENT ON TABLE projects IS 'Project containers for tasks'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE projects IS 'Project containers for tasks'
+2026-04-08 11:42:06,293 INFO sqlalchemy.engine.Engine [no key 0.00078s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00078s] {}
+2026-04-08 11:42:06,294 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN projects.color IS 'Hex e.g. #ff6600'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN projects.color IS 'Hex e.g. #ff6600'
+2026-04-08 11:42:06,295 INFO sqlalchemy.engine.Engine [no key 0.00073s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00073s] {}
+2026-04-08 11:42:06,300 INFO sqlalchemy.engine.Engine 
+CREATE TABLE tasks (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	project_id UUID, 
+	title VARCHAR(255) NOT NULL, 
+	description TEXT, 
+	priority priority_enum DEFAULT 'NORMAL' NOT NULL, 
+	status status_enum DEFAULT 'not_started' NOT NULL, 
+	due_date TIMESTAMP WITH TIME ZONE, 
+	estimated_hours FLOAT, 
+	actual_hours FLOAT, 
+	assigned_to UUID, 
+	parent_task_id UUID, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	completed_at TIMESTAMP WITH TIME ZONE, 
+	tags VARCHAR[], 
+	ai_breakdown JSONB, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	FOREIGN KEY(project_id) REFERENCES projects (id) ON DELETE SET NULL, 
+	FOREIGN KEY(assigned_to) REFERENCES users (id) ON DELETE SET NULL, 
+	FOREIGN KEY(parent_task_id) REFERENCES tasks (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE tasks (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	project_id UUID, 
+	title VARCHAR(255) NOT NULL, 
+	description TEXT, 
+	priority priority_enum DEFAULT 'NORMAL' NOT NULL, 
+	status status_enum DEFAULT 'not_started' NOT NULL, 
+	due_date TIMESTAMP WITH TIME ZONE, 
+	estimated_hours FLOAT, 
+	actual_hours FLOAT, 
+	assigned_to UUID, 
+	parent_task_id UUID, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	completed_at TIMESTAMP WITH TIME ZONE, 
+	tags VARCHAR[], 
+	ai_breakdown JSONB, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	FOREIGN KEY(project_id) REFERENCES projects (id) ON DELETE SET NULL, 
+	FOREIGN KEY(assigned_to) REFERENCES users (id) ON DELETE SET NULL, 
+	FOREIGN KEY(parent_task_id) REFERENCES tasks (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06,300 INFO sqlalchemy.engine.Engine [no key 0.00085s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00085s] {}
+2026-04-08 11:42:06,556 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_user_id ON tasks (user_id)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_user_id ON tasks (user_id)
+2026-04-08 11:42:06,556 INFO sqlalchemy.engine.Engine [no key 0.00036s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00036s] {}
+2026-04-08 11:42:06,605 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_project_id ON tasks (project_id)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_project_id ON tasks (project_id)
+2026-04-08 11:42:06,605 INFO sqlalchemy.engine.Engine [no key 0.00036s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00036s] {}
+2026-04-08 11:42:06,650 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_user_priority ON tasks (user_id, priority)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_user_priority ON tasks (user_id, priority)
+2026-04-08 11:42:06,650 INFO sqlalchemy.engine.Engine [no key 0.00045s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00045s] {}
+2026-04-08 11:42:06,705 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_user_due ON tasks (user_id, due_date)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_user_due ON tasks (user_id, due_date)
+2026-04-08 11:42:06,706 INFO sqlalchemy.engine.Engine [no key 0.00034s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00034s] {}
+2026-04-08 11:42:06,783 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_assigned_to ON tasks (assigned_to)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_assigned_to ON tasks (assigned_to)
+2026-04-08 11:42:06,783 INFO sqlalchemy.engine.Engine [no key 0.00038s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00038s] {}
+2026-04-08 11:42:06,839 INFO sqlalchemy.engine.Engine CREATE INDEX ix_tasks_user_status ON tasks (user_id, status)
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_tasks_user_status ON tasks (user_id, status)
+2026-04-08 11:42:06,839 INFO sqlalchemy.engine.Engine [no key 0.00046s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00046s] {}
+2026-04-08 11:42:06,884 INFO sqlalchemy.engine.Engine COMMENT ON TABLE tasks IS 'Core task entity'
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE tasks IS 'Core task entity'
+2026-04-08 11:42:06,884 INFO sqlalchemy.engine.Engine [no key 0.00047s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00047s] {}
+2026-04-08 11:42:06,887 INFO sqlalchemy.engine.Engine 
+CREATE TABLE team_members (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	project_id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	role team_role_enum NOT NULL, 
+	joined_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	CONSTRAINT uq_team_project_user UNIQUE (project_id, user_id), 
+	FOREIGN KEY(project_id) REFERENCES projects (id) ON DELETE CASCADE, 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE team_members (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	project_id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	role team_role_enum NOT NULL, 
+	joined_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	CONSTRAINT uq_team_project_user UNIQUE (project_id, user_id), 
+	FOREIGN KEY(project_id) REFERENCES projects (id) ON DELETE CASCADE, 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:06,888 INFO sqlalchemy.engine.Engine [no key 0.00045s] {}
+2026-04-08 11:42:06 | INFO     | sqlalchemy.engine.Engine | [no key 0.00045s] {}
+2026-04-08 11:42:07,011 INFO sqlalchemy.engine.Engine CREATE INDEX ix_team_members_user_id ON team_members (user_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_team_members_user_id ON team_members (user_id)
+2026-04-08 11:42:07,011 INFO sqlalchemy.engine.Engine [no key 0.00090s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00090s] {}
+2026-04-08 11:42:07,062 INFO sqlalchemy.engine.Engine CREATE INDEX ix_team_members_project_id ON team_members (project_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_team_members_project_id ON team_members (project_id)
+2026-04-08 11:42:07,063 INFO sqlalchemy.engine.Engine [no key 0.00041s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00041s] {}
+2026-04-08 11:42:07,106 INFO sqlalchemy.engine.Engine COMMENT ON TABLE team_members IS 'User–project membership'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE team_members IS 'User–project membership'
+2026-04-08 11:42:07,107 INFO sqlalchemy.engine.Engine [no key 0.00038s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00038s] {}
+2026-04-08 11:42:07,110 INFO sqlalchemy.engine.Engine 
+CREATE TABLE user_preferences (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	theme theme_enum DEFAULT 'light' NOT NULL, 
+	email_notifications BOOLEAN DEFAULT true NOT NULL, 
+	sms_notifications BOOLEAN DEFAULT false NOT NULL, 
+	phone_number VARCHAR(255), 
+	reminders_24h_before BOOLEAN DEFAULT true NOT NULL, 
+	reminders_6h_before BOOLEAN DEFAULT true NOT NULL, 
+	reminders_1h_before BOOLEAN DEFAULT true NOT NULL, 
+	default_priority default_priority_enum DEFAULT 'NORMAL' NOT NULL, 
+	default_project_id UUID, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (user_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	FOREIGN KEY(default_project_id) REFERENCES projects (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE user_preferences (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	theme theme_enum DEFAULT 'light' NOT NULL, 
+	email_notifications BOOLEAN DEFAULT true NOT NULL, 
+	sms_notifications BOOLEAN DEFAULT false NOT NULL, 
+	phone_number VARCHAR(255), 
+	reminders_24h_before BOOLEAN DEFAULT true NOT NULL, 
+	reminders_6h_before BOOLEAN DEFAULT true NOT NULL, 
+	reminders_1h_before BOOLEAN DEFAULT true NOT NULL, 
+	default_priority default_priority_enum DEFAULT 'NORMAL' NOT NULL, 
+	default_project_id UUID, 
+	updated_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	UNIQUE (user_id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+	FOREIGN KEY(default_project_id) REFERENCES projects (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07,111 INFO sqlalchemy.engine.Engine [no key 0.00114s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00114s] {}
+2026-04-08 11:42:07,258 INFO sqlalchemy.engine.Engine COMMENT ON TABLE user_preferences IS 'Extended user settings'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE user_preferences IS 'Extended user settings'
+2026-04-08 11:42:07,258 INFO sqlalchemy.engine.Engine [no key 0.00052s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00052s] {}
+2026-04-08 11:42:07,261 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN user_preferences.phone_number IS 'Encrypted phone for SMS'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN user_preferences.phone_number IS 'Encrypted phone for SMS'
+2026-04-08 11:42:07,262 INFO sqlalchemy.engine.Engine [no key 0.00091s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00091s] {}
+2026-04-08 11:42:07,266 INFO sqlalchemy.engine.Engine 
+CREATE TABLE reminders (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	task_id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	reminder_type reminder_type_enum NOT NULL, 
+	scheduled_time TIMESTAMP WITH TIME ZONE NOT NULL, 
+	time_before_deadline INTEGER, 
+	frequency reminder_freq_enum DEFAULT 'once' NOT NULL, 
+	is_sent BOOLEAN DEFAULT false NOT NULL, 
+	sent_at TIMESTAMP WITH TIME ZONE, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE CASCADE, 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE reminders (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	task_id UUID NOT NULL, 
+	user_id UUID NOT NULL, 
+	reminder_type reminder_type_enum NOT NULL, 
+	scheduled_time TIMESTAMP WITH TIME ZONE NOT NULL, 
+	time_before_deadline INTEGER, 
+	frequency reminder_freq_enum DEFAULT 'once' NOT NULL, 
+	is_sent BOOLEAN DEFAULT false NOT NULL, 
+	sent_at TIMESTAMP WITH TIME ZONE, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE CASCADE, 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:07,266 INFO sqlalchemy.engine.Engine [no key 0.00056s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00056s] {}
+2026-04-08 11:42:07,327 INFO sqlalchemy.engine.Engine CREATE INDEX ix_reminders_task_id ON reminders (task_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_reminders_task_id ON reminders (task_id)
+2026-04-08 11:42:07,328 INFO sqlalchemy.engine.Engine [no key 0.00058s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00058s] {}
+2026-04-08 11:42:07,375 INFO sqlalchemy.engine.Engine CREATE INDEX ix_reminders_scheduled_time ON reminders (scheduled_time)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_reminders_scheduled_time ON reminders (scheduled_time)
+2026-04-08 11:42:07,375 INFO sqlalchemy.engine.Engine [no key 0.00066s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00066s] {}
+2026-04-08 11:42:07,438 INFO sqlalchemy.engine.Engine COMMENT ON TABLE reminders IS 'Scheduled notifications for tasks'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE reminders IS 'Scheduled notifications for tasks'
+2026-04-08 11:42:07,438 INFO sqlalchemy.engine.Engine [no key 0.00068s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00068s] {}
+2026-04-08 11:42:07,440 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN reminders.time_before_deadline IS 'Minutes before due date'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN reminders.time_before_deadline IS 'Minutes before due date'
+2026-04-08 11:42:07,441 INFO sqlalchemy.engine.Engine [no key 0.00064s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00064s] {}
+2026-04-08 11:42:07,445 INFO sqlalchemy.engine.Engine 
+CREATE TABLE recurring_rules (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	original_task_id UUID NOT NULL, 
+	frequency recurring_freq_enum NOT NULL, 
+	interval INTEGER DEFAULT '1' NOT NULL, 
+	days_of_week INTEGER[], 
+	end_date TIMESTAMP WITH TIME ZONE, 
+	occurrence_count INTEGER, 
+	next_occurrence TIMESTAMP WITH TIME ZONE NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(original_task_id) REFERENCES tasks (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE recurring_rules (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	original_task_id UUID NOT NULL, 
+	frequency recurring_freq_enum NOT NULL, 
+	interval INTEGER DEFAULT '1' NOT NULL, 
+	days_of_week INTEGER[], 
+	end_date TIMESTAMP WITH TIME ZONE, 
+	occurrence_count INTEGER, 
+	next_occurrence TIMESTAMP WITH TIME ZONE NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(original_task_id) REFERENCES tasks (id) ON DELETE CASCADE
+)
+
+
+2026-04-08 11:42:07,446 INFO sqlalchemy.engine.Engine [no key 0.00062s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00062s] {}
+2026-04-08 11:42:07,556 INFO sqlalchemy.engine.Engine CREATE INDEX ix_recurring_rules_original_task_id ON recurring_rules (original_task_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_recurring_rules_original_task_id ON recurring_rules (original_task_id)
+2026-04-08 11:42:07,557 INFO sqlalchemy.engine.Engine [no key 0.00059s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00059s] {}
+2026-04-08 11:42:07,609 INFO sqlalchemy.engine.Engine COMMENT ON TABLE recurring_rules IS 'Recurrence definitions for tasks'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE recurring_rules IS 'Recurrence definitions for tasks'
+2026-04-08 11:42:07,609 INFO sqlalchemy.engine.Engine [no key 0.00064s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00064s] {}
+2026-04-08 11:42:07,612 INFO sqlalchemy.engine.Engine COMMENT ON COLUMN recurring_rules.days_of_week IS 'ISO weekday numbers (1=Mon … 7=Sun)'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON COLUMN recurring_rules.days_of_week IS 'ISO weekday numbers (1=Mon … 7=Sun)'
+2026-04-08 11:42:07,612 INFO sqlalchemy.engine.Engine [no key 0.00061s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00061s] {}
+2026-04-08 11:42:07,616 INFO sqlalchemy.engine.Engine 
+CREATE TABLE ai_requests_log (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	task_id UUID, 
+	request_type ai_request_type_enum NOT NULL, 
+	input_tokens INTEGER NOT NULL, 
+	output_tokens INTEGER NOT NULL, 
+	model_used VARCHAR(64) NOT NULL, 
+	cost NUMERIC(10, 5) NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE SET NULL, 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE ai_requests_log (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	user_id UUID NOT NULL, 
+	task_id UUID, 
+	request_type ai_request_type_enum NOT NULL, 
+	input_tokens INTEGER NOT NULL, 
+	output_tokens INTEGER NOT NULL, 
+	model_used VARCHAR(64) NOT NULL, 
+	cost NUMERIC(10, 5) NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE SET NULL, 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07,616 INFO sqlalchemy.engine.Engine [no key 0.00059s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00059s] {}
+2026-04-08 11:42:07,685 INFO sqlalchemy.engine.Engine CREATE INDEX ix_ai_requests_log_user_id ON ai_requests_log (user_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_ai_requests_log_user_id ON ai_requests_log (user_id)
+2026-04-08 11:42:07,686 INFO sqlalchemy.engine.Engine [no key 0.00039s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00039s] {}
+2026-04-08 11:42:07,742 INFO sqlalchemy.engine.Engine COMMENT ON TABLE ai_requests_log IS 'Audit trail for AI operations'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE ai_requests_log IS 'Audit trail for AI operations'
+2026-04-08 11:42:07,742 INFO sqlalchemy.engine.Engine [no key 0.00037s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00037s] {}
+2026-04-08 11:42:07,745 INFO sqlalchemy.engine.Engine 
+CREATE TABLE task_history (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	task_id UUID NOT NULL, 
+	status_changed_from VARCHAR(32) NOT NULL, 
+	status_changed_to VARCHAR(32) NOT NULL, 
+	changed_by UUID NOT NULL, 
+	changed_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE CASCADE, 
+	FOREIGN KEY(changed_by) REFERENCES users (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | 
+CREATE TABLE task_history (
+	id UUID DEFAULT gen_random_uuid() NOT NULL, 
+	task_id UUID NOT NULL, 
+	status_changed_from VARCHAR(32) NOT NULL, 
+	status_changed_to VARCHAR(32) NOT NULL, 
+	changed_by UUID NOT NULL, 
+	changed_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+	PRIMARY KEY (id), 
+	FOREIGN KEY(task_id) REFERENCES tasks (id) ON DELETE CASCADE, 
+	FOREIGN KEY(changed_by) REFERENCES users (id) ON DELETE SET NULL
+)
+
+
+2026-04-08 11:42:07,746 INFO sqlalchemy.engine.Engine [no key 0.00107s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00107s] {}
+2026-04-08 11:42:07,802 INFO sqlalchemy.engine.Engine CREATE INDEX ix_task_history_task_id ON task_history (task_id)
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | CREATE INDEX ix_task_history_task_id ON task_history (task_id)
+2026-04-08 11:42:07,803 INFO sqlalchemy.engine.Engine [no key 0.00033s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00033s] {}
+2026-04-08 11:42:07,853 INFO sqlalchemy.engine.Engine COMMENT ON TABLE task_history IS 'Status change log for analytics'
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMENT ON TABLE task_history IS 'Status change log for analytics'
+2026-04-08 11:42:07,854 INFO sqlalchemy.engine.Engine [no key 0.00049s] {}
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | [no key 0.00049s] {}
+2026-04-08 11:42:07,855 INFO sqlalchemy.engine.Engine COMMIT
+2026-04-08 11:42:07 | INFO     | sqlalchemy.engine.Engine | COMMIT
+2026-04-08 11:42:07 | INFO     | taskmaster | Database tables ensured
+INFO:     Application startup complete.
